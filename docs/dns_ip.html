@@ -3,36 +3,40 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>The Internet</title>
 </head>
+
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-md">
+        <a class="navbar-brand" href="#">
+            <img src="img/fav_ic.ico" width="30" height="30">
+        </a>
         <a class="navbar-brand" href="index.html">The Internet</a>
-        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-target="#navbarNav" data-toggle="collapse" type="button">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                       data-toggle="dropdown" href="#" id="navbarDropdownMenuLink" role="button">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         History of the Internet
                     </a>
-                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="invention.html">The Invention of the Internet</a>
                         <a class="dropdown-item" href="browser_wars.html">Browser Wars</a>
                         <a class="dropdown-item" href="internet_search.html">Internet Search</a>
@@ -40,7 +44,7 @@
                         <a class="dropdown-item" href="people.html">People</a>
                     </div>
                 </li>
-                <li class="nav-item active dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         How the Internet Works
@@ -55,111 +59,29 @@
                 </li>
             </ul>
         </div>
-    </nav>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active">How the Internet Works</li>
-            <li aria-current="page" class="breadcrumb-item active">DNS and TCP/IP</li>
-        </ol>
-        <div class="row">
-            <div class="col-lg-8">
-                <h1 class="test">DNS and TCP/IP</h1>
-                <img alt="picture of network switch" class="img-thumbnail"
-                     src="img/networkswitch.jpeg">
-            </div>
-            <div class="col-4 d-none d-lg-block">
-                <div class="card " style="width: 18rem;">
-                    <div class="card-header">
-                        <b>How the Internet Works</b>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="icann.html">ICANN</a></li>
-                        <li class="list-group-item"><a href="w3c.html">W3C</a></li>
-                        <li class="list-group-item"><a href="timbl.html">Tim Berners-Lee</a></li>
-                        <li class="list-group-item">DNS and TCP/IP</li>
-                        <li class="list-group-item"><a href="http.html">HTTP, HTTPS and HTML</a></li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
-                        <b>History of the Internet</b>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="invention.html">The Invention of the Internet</a></li>
-                        <li class="list-group-item"><a href="browser_wars.html">Browser Wars</a></li>
-                        <li class="list-group-item"><a href="internet_search.html">Internet Search</a></li>
-                        <li class="list-group-item"><a href="dot_com_bubble.html">Dot Com Bubble</a></li>
-                        <li class="list-group-item"><a href="people.html">People</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    </div>
+</nav>
 
-    <main class="people-main container">
-        <section class="people-section">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p class="lead">
-                        Pictured above is an example of a network switch which is used to connect servers so that they can
-                        “talk” to each other, thus creating a network that can be used for sharing information. The Domain
-                        Name
-                        System (DNS) uses domain name servers to locate domain names and translate them into Internet
-                        Protocol
-                        (IP) addresses. A domain name is located in the first part of a Uniform Resource Locator (URL) and
-                        you
-                        can find more information on how to read a URL <a href="http.html">here</a>. DNS is separated
-                        into
-                        a distributed hierarchy of servers
-                        including root name servers, Top Level Domain (TLD) servers, and authoritative servers. The
-                        functionality of the Internet heavily relies on DNS. The DNS protocol is a detailed specification of
-                        the data structures and exchanges that are used in the DNS and it is a part of the Internet Protocol
-                        Suite. The Internet Protocol Suite is a set of communication procedures used on the Internet and it
-                        is commonly known as TCP/IP. Transmission Control Protocol (TCP) and Internet Protocol (IP) are the
-                        foundational protocols of the Internet Protocol Suite.
-                    </p>
-                    <p class="lead">
-                        When information is sent via the Internet, the data is divided into packets that have a maximum
-                        size of 64 kilobytes. When data being sent is broken down into multiple packets, the packets
-                        contain numbers that indicate the order in which they must be rearranged when they are received.
-                        Each packet contains a “from” address, a “to” address, the actual data being sent, and the
-                        number of the particular packet. Packets must be ordered because they often don’t arrive at
-                        their destination in order or simultaneously. TCP takes inventory of packets sent by a computer
-                        and sends an acknowledgment back to the sender if all packets are received. If all packets are
-                        not received, TCP will not approve or acknowledge the packets and they must be resent.
-                    </p>
-                    <img alt="ip address example" src="img/ip-address.jpg">
-                    <p class="lead">
-                        All IP addresses are allocated by the Internet Assigned Numbers Authority (IANA) and there
-                        are currently two versions of IP addresses – IPv4 and IPv6. IPv4 addresses are 32 bits in
-                        size and are composed of 4 numerical octets. Octets are blocks of hexadecimal digits that
-                        make up an IP address. Pictured above is a color coded example of how each numerical bit corresponds
-                        to an octet. IPv4 has two major parts to its makeup – the network address and the
-                        host address. IPv4
-                        provides approximately 4 billion unique addresses which, unfortunately, proved to be
-                        insufficient. IPv6 addresses were created to accommodate the need for more unique IP
-                        addresses. IPv6 addresses are 128 bits in size and are composed of 8 numerical octets,
-                        allowing for approximately 340 undecillion (340 undecillion = 340 trillion trillion
-                        TRILLION!) unique addresses.
-                    </p>
-                </div>
-            </div>
-        </section>
+<h1>DNS and TCP/IP</h1>
 
-
-    </main>
-
-
-</div>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid footer-text">
+    <span class="navbar-text footer">
+      &copy; Hannah Benjamin 2020
+            </span>
+    </div>
+</nav>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 </html>
