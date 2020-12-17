@@ -80,8 +80,11 @@ figcaption {
     font-size: small;
 }
 
-/* container for home carousel */
-.home-carousel {
-    max-width: 900px;
+/* container for home card */
+.home-card {
+    max-width: 700px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    text-align: center;
 }
 
